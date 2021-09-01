@@ -7,7 +7,7 @@ export class AwsTestDeployStack extends cdk.Stack {
     super(scope, id, props);
 
     new TestVPC(this, "Test", {
-      vpcCidrBlock: "10.128.0.0/16",
+      vpcCidrBlock: "",
       availabilityZone: "ap-northeast-1c",
       keyPairName: "",
     });
